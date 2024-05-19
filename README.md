@@ -1,13 +1,18 @@
-#Home Lab Project: 
-#Installing and securing Nginx Web Server with Web Application Firewall on Ubuntu Server VM
+Home Lab Project: 
+
+Installing and securing Nginx Web Server with Web Application Firewall on Ubuntu Server VM
 
 Objectives:
+
 Setting up a home lab project aimed at installing and securing an Nginx web server with a Web Application Firewall (WAF) on an Ubuntu Server Virtual Machine (VM). This project aims to provides a secure environment for hosting web applications by utilizing Nginx as the web server and integrating ModSecurity as the WAF for enhanced security, and to horn my skills on Web application security.
 
 Hardware and Software Used:
+
 Ubuntu Host: 16G 256SSD I5 3rd Gen with VirtualBox running:
     • Ubuntu Server VM: For installing Nginx web sever and 
-    • Kali VM
+    • Nginx Web Server
+    • Modsecurity WAF
+    
 
 
 1. Power up Ubuntu server and kali VM on VirtualBox
@@ -99,16 +104,17 @@ server {
     modsecurity_rules_file /etc/nginx/modsec/main.conf;
 }
 
-
 ![1](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/77abd59f-17ba-4296-89e3-ba06dee34fd4)
 
 Customize the configuration according to your specific requirements, including server name, port, and proxy settings.
+
+![Screenshot from 2024-05-19 17-07-09](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/f4e62fed-d81c-4738-a133-a0a1bf813d1d)
+
 Save the changes and exit the text editor.
 4. Installing ModSecurity:
 
 Install ModSecurity for Nginx using the following command:
-lua
-Copy code
+
 sudo apt install libnginx-mod-security
 5. Enabling ModSecurity in Nginx:
 
