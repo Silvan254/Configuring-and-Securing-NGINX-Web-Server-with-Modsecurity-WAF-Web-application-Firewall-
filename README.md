@@ -25,6 +25,7 @@ Ubuntu Host: 16G 256SSD I5 3rd Gen with VirtualBox running:
 3.Installing nginx, 
 
 $ sudo apt install nginx
+
 ![3](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/51aac9cd-479a-4901-ae8c-0b74cd25fae0)
 
 Checking if my Nginx service is running:
@@ -69,7 +70,9 @@ Determine which version of NGINX is running on the host where the ModSecurity mo
 
 Downloading the source code corresponding to the installed version of NGINX (the complete 
 sources are required even though only the dynamic module is being compiled):
+![8](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/f4f717ec-14ac-4664-be87-3339ea8a0e33)
 
+![1](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/77abd59f-17ba-4296-89e3-ba06dee34fd4)
 
 Compile the dynamic module and copy it to the standard directory for modules:
 $ cd nginx-1.13.1
@@ -96,6 +99,8 @@ server {
     modsecurity_rules_file /etc/nginx/modsec/main.conf;
 }
 
+
+![1](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/77abd59f-17ba-4296-89e3-ba06dee34fd4)
 
 Customize the configuration according to your specific requirements, including server name, port, and proxy settings.
 Save the changes and exit the text editor.
