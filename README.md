@@ -1,5 +1,5 @@
-Home Lab Project: 
-Installing and securing Nginx Web Server with Web Application Firewall on Ubuntu Server VM
+#Home Lab Project: 
+#Installing and securing Nginx Web Server with Web Application Firewall on Ubuntu Server VM
 
 Objectives:
 Setting up a home lab project aimed at installing and securing an Nginx web server with a Web Application Firewall (WAF) on an Ubuntu Server Virtual Machine (VM). This project aims to provides a secure environment for hosting web applications by utilizing Nginx as the web server and integrating ModSecurity as the WAF for enhanced security, and to horn my skills on Web application security.
@@ -28,6 +28,8 @@ $ sudo apt install nginx
 Checking if my Nginx service is running:
 
 $ sudo systemctl status Nginix
+![Screenshot from 2024-05-19 16-49-09](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/95154996-6a0b-4800-ac6c-b12822e2ee94)
+
 and from my host browser
 ![4](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/725c0e38-91af-4d3d-ad2f-4976bb2fd395)
 
