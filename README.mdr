@@ -15,7 +15,7 @@ Ubuntu Host: 16G 256SSD I5 3rd Gen with VirtualBox running:
 #Running sudo apt update to refresh package lists for us to install required dependancies for nginx and modsecurity.
 
 
-2.
+2.![image](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/20b38d23-655c-4e6f-b412-787e88057bcb)
 
 
 
