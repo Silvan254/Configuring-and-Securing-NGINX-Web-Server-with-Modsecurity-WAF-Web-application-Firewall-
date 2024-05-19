@@ -16,6 +16,8 @@ Ubuntu Host: 16G 256SSD I5 3rd Gen with VirtualBox running:
 
 
 2. Install the prerequisites:
+
+   
 ![2](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/5f9dc224-0bab-4210-abeb-bbe1891ac299)
 
 
@@ -28,13 +30,19 @@ $ sudo apt install nginx
 Checking if my Nginx service is running:
 
 $ sudo systemctl status Nginix
+
 ![Screenshot from 2024-05-19 16-49-09](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/95154996-6a0b-4800-ac6c-b12822e2ee94)
+
+
 
 and from my host browser
 ![4](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/725c0e38-91af-4d3d-ad2f-4976bb2fd395)
 
 3. Download and Compile the ModSecurity 3.0 Source Code
 Clonning the GitHub repository:
+
+![5](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/611cc8c9-da19-4284-aaf3-7c8d143fa03e)
+
 
 Change to the ModSecurity directory and compile the source code:
 $ cd ModSecurity
@@ -52,7 +60,12 @@ $ cd ..
 Clone the GitHub repository:
 $ git clone --depth 1 https://github.com/SpiderLabs/ModSecurity-nginx.git
 
+![6](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/877fdac5-d1a0-4ecd-8b2c-571870160982)
+
 Determine which version of NGINX is running on the host where the ModSecurity module will be loaded:
+
+![7](https://github.com/Silvan254/Configuring-and-Securing-NGINX-Web-Server-with-Modsecurity-WAF-Web-application-Firewall-/assets/65334897/7df3ef52-9b6c-406e-ba32-341f50072274)
+
 
 Downloading the source code corresponding to the installed version of NGINX (the complete 
 sources are required even though only the dynamic module is being compiled):
